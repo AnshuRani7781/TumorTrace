@@ -123,7 +123,7 @@
         .text-container h1 { 
             font-family: "Nerko One", cursive;
  
-  font-style: normal;
+        font-style: normal;
             font-size: 7.5rem;
             font-weight: 700;
             color: #AA39D1;  /* Hot pink for main heading */ 
@@ -143,8 +143,8 @@
             position: relative;
         }
         .hero-image:hover {
-    transform: scale(1.5); /* Scale the image to 1.5 times its size */
-}
+            transform: scale(1.5); /* Scale the image to 1.5 times its size */
+        }
         .image-container {
             max-width: 100%;
             position: relative; 
@@ -159,20 +159,20 @@
         }
 
         .icon {
-    width: 120px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    cursor: pointer;
-    padding: 20px;
-}
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            cursor: pointer;
+            padding: 20px;
+        }
 
 .icon i {
     font-size: 3rem; /* Increased icon size */
@@ -367,14 +367,18 @@ footer {
         height: auto; /* Adjusted for smaller screens */
         background-size: cover; /* Ensure the image covers the container */
     }
-
+    .hero-section{
+        top:5%
+    }
     .text-container h1 {
         font-size: 3rem; /* Adjusted for smaller screens */
     }
-
+    .change_gap{
+        gap:8px;
+    }
     .image-grid {
         grid-template-columns: 1fr; /* Single column layout for smaller screens */
-        padding: 10px;
+        padding: 80px;
     }
 
     .icon {
@@ -424,7 +428,7 @@ footer {
                     <li><a href="#home" style="color: #FF69B4;">Home</a></li> <!-- Updated link -->
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#how-it-works">How It Works</a></li> <!-- Updated link -->
-                    <li><a href="#get-started" class="btn">Get Started</a></li>
+                    <li class="change_gap"><a href="#get-started" class="btn" >Get Started</a></li>
                 </ul>
             </nav>
             
@@ -472,10 +476,10 @@ footer {
                 </div>
               </div>
               <div class="footer-section">
-                <h3 class="footer-heading" ">Get In Touch</h3>
-                      <p>support@pagedone.com</p>
-                      <p>+91 945 658 3236</p>
-                      <p>kolkata, India.</p>
+                <h3 class="footer-heading"> &nbsp Get In Touch</h3>
+                      <p> &nbsp support@pagedone.com</p>
+                      <p> &nbsp +91 945 658 3236</p>
+                      <p> &nbsp kolkata, India.</p>
                   </div>
                   <div class=" footer-section">
                   <h3 class="footer-heading">Quick Links</h3>
