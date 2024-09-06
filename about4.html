@@ -29,7 +29,10 @@
       .main-img:hover{
         transform: scale(1.05);
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    }  
+    }   
+    button.btn-details { 
+      transition: transform 0.3s ease;
+    }
     button.btn-details:hover{
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     }
@@ -40,6 +43,20 @@
     .subscribe :hover{
           color:black;
     }
+    </style> 
+    <style>
+      @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar nav ul {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+    }
+  }
     </style>
 </head>
 
@@ -51,10 +68,10 @@
     </div>
     <nav>
       <ul> 
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about" style="color:  #FF69B4;">About Us</a></li>
-        <li><a href="#how-it-works">How It Works</a></li> <!-- Updated link -->
-        <li><a href="#get-started" class="btn">Get Started</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about4.html" style="color:  #FF69B4;">About Us</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li> <!-- Updated link -->
+        <li><a href="predictor.html" class="btn">Get Started</a></li>
       </ul>
     </nav>
 
@@ -204,10 +221,10 @@
           <div class=" footer-section">
           <h3 class="footer-heading">Quick Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">How it works!</a></li>
-            <li><a href="#">Prediction</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about4.html">About</a></li>
+            <li><a href="how-it-works.html">How it works!</a></li>
+            <li><a href="predictor.html">Prediction</a></li>
           </ul>
       </div>
       <div class="footer-section">
@@ -222,7 +239,7 @@
       <p>&copy; 2023 All Right Reserved TumorTrace.</p>
     </div>
   </div>
-  <div id="backtotop">
+  <div  style="color:#FF69B4" id="backtotop">
     <h2><i class='bx bxs-up-arrow'></i></h2>
     <div id="end"></div>
   </div>

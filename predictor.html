@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breast Cancer Prediction</title>
+    <title>Breast Cancer Prediction</title> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -17,7 +18,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/framer-motion/dist/framer-motion.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
         body { 
@@ -180,11 +182,11 @@
             width: 100%;
         }
 
-        @media (min-width: 768px) {
+        /* @media (min-width: 768px) {
             .footer-section {
                 width: 24%;
             }
-        }
+        } */
 
         .footer-brand {
             background-color: #FF69B4;
@@ -291,6 +293,73 @@
   font-size: 2rem; /* Adjust size as needed */
   cursor: pointer;
   color: #FF69B4; /* Optional: Change color to match your theme */
+} 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center; 
+       
+    }
+
+    .navbar nav ul {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+    }
+
+    
+    .hero-section{
+        top:5%
+    }
+    .text-container h1 {
+        font-size: 3rem; /* Adjusted for smaller screens */
+    }
+    
+    .image-grid {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        padding: 80px;
+    }
+
+    .icon {
+        width: 80px; /* Adjusted size */
+        height: 80px; /* Adjusted size */
+    }
+
+    .icon i {
+        font-size: 1.5rem; /* Adjusted icon size */
+    }
+
+    .icon-text {
+        font-size: 0.8rem; /* Adjusted font size */
+    }
+
+    .container-footer {
+        flex-direction: column;
+    }
+
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter input[type="email"] {
+        margin-bottom: 10px;
+    } 
+    #backtotop h2 {
+        font-size: 1rem; 
+        font-weight: 600;
+          
+} 
+.container-fluid{
+    grid-template-columns: 1fr; 
+    padding: 80px;
+}
+}
+
+@media (max-width: 480px) {  
+    #backtotop h2 {
+        font-size: 1rem; 
+        font-weight: 600;
+
 }
     </style>
 </head>
@@ -305,10 +374,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#how-it-works">How It Works</a></li> <!-- Updated link -->
-                <li><a href="#get-started" class="btn">Get Started</a></li>
+                <li><a href="\index.html">Home</a></li>
+                <li><a href="about4.html">About Us</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li> <!-- Updated link -->
+                <li><a href="predictor.html" class="btn">Get Started</a></li>
             </ul>
         </nav>
     </header>
@@ -382,10 +451,10 @@
               <div class=" footer-section">
               <h3 class="footer-heading">Quick Links</h3>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">How it works!</a></li>
-                <li><a href="#">Prediction</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about4.html">About</a></li>
+                <li><a href="how-it-works.html">How it works!</a></li>
+                <li><a href="predictor.html">Prediction</a></li>
               </ul>
           </div>
           <div class="footer-section">

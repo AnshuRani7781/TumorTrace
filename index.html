@@ -82,7 +82,8 @@
             display: inline;
         }
 
-        .navbar nav ul li a {
+        .navbar nav ul li a { 
+                padding: 10px 20px;
             text-decoration: none;
             color: #333;
             font-weight: 500;
@@ -349,17 +350,19 @@ footer {
   
   text-transform: uppercase;
   font-size: 1vw;
-  cursor: pointer;
+  cursor: pointer; 
+  color: #FF69B4;
 } 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .navbar nav ul {
-        flex-direction: column;
+        flex-direction: column; 
+        align-items: center;
         gap: 10px;
     }
 
@@ -378,7 +381,7 @@ footer {
     }
     .image-grid {
         grid-template-columns: 1fr; /* Single column layout for smaller screens */
-        padding: 80px;
+        padding: 100px;
     }
 
     .icon {
@@ -404,13 +407,22 @@ footer {
 
     .newsletter input[type="email"] {
         margin-bottom: 10px;
-    }
+    } 
+    #backtotop h2 {
+        font-size: 1rem; 
+        font-weight: 600;
+          
+}
 }
 
 @media (max-width: 480px) {
     .text-container h1 {
         font-size: 2rem; /* Adjusted for very small screens */
-    }
+     }  
+    #backtotop h2 {
+        font-size: 1rem; 
+        font-weight: 600;
+
 }
     </style>
 </head>
@@ -425,10 +437,10 @@ footer {
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home" style="color: #FF69B4;">Home</a></li> <!-- Updated link -->
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li> <!-- Updated link -->
-                    <li class="change_gap"><a href="#get-started" class="btn" >Get Started</a></li>
+                    <li><a href="\index.html" style="color: #FF69B4;" style="padding: 10 px 20px;">Home</a></li> <!-- Updated link -->
+                    <li><a href="about4.html" style="padding: 10 px 20px;">About Us</a></li>
+                    <li><a href="how-it-works.html" style="padding: 10 px 20px;">How It Works</a></li> <!-- Updated link -->
+                    <li class="change_gap"><a href="predictor.html" class="btn" style="padding: 10 px 20px;" >Get Started</a></li>
                 </ul>
             </nav>
             
@@ -484,10 +496,10 @@ footer {
                   <div class=" footer-section">
                   <h3 class="footer-heading">Quick Links</h3>
                   <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">How it works!</a></li>
-                    <li><a href="#">Prediction</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about4.html">About</a></li>
+                    <li><a href="how-it-works.html">How it works!</a></li>
+                    <li><a href="predictor.html">Prediction</a></li>
                   </ul>
               </div>
               <div class="footer-section">
